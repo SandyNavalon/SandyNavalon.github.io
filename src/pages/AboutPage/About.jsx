@@ -4,7 +4,7 @@ import { FormattedMessage as T } from 'react-intl';
 const About = ({ about }) => {
     return (
       <div className='about'>
-        <h1 className='about__title'><T id="about.title"/></h1>
+        <h2 className='about__title'><T id="about.title"/></h2>
         <div className='box'>
           <div className='about__background'></div>
           <div className='about__card'>

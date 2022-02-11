@@ -9,7 +9,7 @@ const MoreInfo = ({ languages, skills }) => {
     return(
         <div className='moreInfo'>
             <div className='languages'>
-                <h1><T id='languages.title'/></h1>
+                <h2><T id='languages.title'/></h2>
                 <div className='box'>
                 <div className='languages__background'></div>
                     <div className='languages__card'>
@@ -26,7 +26,7 @@ const MoreInfo = ({ languages, skills }) => {
                 </div>
             </div>
             <div className='skills'>
-                <h1><T id='skills.title' /></h1>
+                <h2><T id='skills.title' /></h2>
                 <div className='box'>
                     <div className='skills__background'></div>
                     <div className='skills__card'>
