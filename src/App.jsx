@@ -23,13 +23,15 @@ function App() {
     <LanguageSelector/>
     <Person person={person}/>
     <About about={aboutMe}/>
-    <div>
-      <button className='App__btn' onClick={() => setShowEducation(true)}>
+    <div className='App__eduExp'>
+      <div className='App__btns'>
+      <button className='App__btns-btn' onClick={() => setShowEducation(true)}>
       <T id="app.educationBtn" />
       </button>
-      <button className='App__btn' onClick={() => setShowEducation(false)}>
+      <button className='App__btns-btn' onClick={() => setShowEducation(false)}>
       <T id="app.experienceBtn" />
       </button>
+      </div>
       <div>
         {showEducation ?
         (<Education education={education}/>)

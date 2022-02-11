@@ -65,3 +65,38 @@
     }
   }
 }
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .about{
+    &__background{
+      width: 400px;
+    }
+
+    &__card{
+      width: 400px;
+      font-size: 15px;
+
+      display: flex;
+      justify-content: center;
+
+    }
+  }
+};
+
+@media only screen and (max-width: 600px) {
+  .about{
+    &__background{
+      width: 300px;
+    }
+
+    &__card{
+      width: 300px;
+      font-size: 15px;
+
+      display: block;
+      justify-content: center;
+
+    }
+  }
+
+}

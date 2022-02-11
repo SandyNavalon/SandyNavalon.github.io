@@ -3,14 +3,16 @@
   font-family: 'Roboto', sans-serif;
 
   h1{
-    font-size: 40px;
+    font-size: 45px;
+    font-family: 'Bitter', serif;
+
   };
 
   h2{
     font-size: 30px;
   };
 
-  &__btn{
+  &__btns-btn{
     font-weight:bold;
     width: 200px;
     height: 60px;
@@ -39,19 +41,55 @@
 
   };
 
-  &__btn:active {
+  &__btns-btn:active {
     box-shadow: 0px 0px 0px 0px;
     top: 5px;
     left: 5px;
   };
 
-  &__btn:focus{
+  &__btns-btn:focus{
     color: rgb(185, 52, 52);
   }
 
-  @media (min-width: 768px) {
-    &__btn {
-      padding: 0.25em 0.75em;
-    }
-  };
 };
+
+
+@media only screen and (max-width: 600px) {
+
+  .App{
+    h1{
+      font-size: 30px;
+    };
+
+    h2{
+      font-size: 20px;
+    };
+
+    &__eduExp{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+      &__btns{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 10px;
+
+        &-btn{
+        width: 120px;
+        height: 60px;
+
+        font-size: 10px;
+        font-weight: 700;
+        margin: 30px;
+        }
+
+      }
+
+  }
+
+}
