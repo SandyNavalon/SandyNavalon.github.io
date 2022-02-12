@@ -90,6 +90,11 @@ export const CV = {
       "PHP",
       "Git & GitHub",
     ],
+    softwareSkills: [
+      "Adobe Illustrator",
+      "Adobe Photoshop",
+      "Microsoft Office 365",
+    ],
   },
 
   es:{
@@ -182,6 +187,11 @@ export const CV = {
       "SQL",
       "PHP",
       "Git & GitHub/ version control",
+    ],
+    softwareSkills: [
+      "Adobe Illustrator",
+      "Adobe Photoshop",
+      "Microsoft Office 365",
     ],
 
   },

@@ -5,7 +5,7 @@ import { FormattedMessage as T  } from 'react-intl';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCommentAlt, faPencilAlt, faPlus } from '@fortawesome/free-solid-svg-icons'
 
-const MoreInfo = ({ languages, skills }) => {
+const MoreInfo = ({ languages, skills, softwareSkills }) => {
     return(
         <div className='moreInfo'>
             <div className='languages'>
@@ -33,6 +33,21 @@ const MoreInfo = ({ languages, skills }) => {
                         {skills.map((item, index) => {
                             return (
                                 <div className='skills__card-item' key={index}>
+                                    <p><FontAwesomeIcon icon={faPlus}/> {item}</p>
+                                </div>
+                            )
+                        })}
+                    </div>
+                </div>
+            </div>
+            <div className='softwareSkills'>
+                <h2><T id='softwareSkills.title' /></h2>
+                <div className='box'>
+                    <div className='softwareSkills__background'></div>
+                    <div className='softwareSkills__card'>
+                        {softwareSkills.map((item, index) => {
+                            return (
+                                <div className='softwareSkills__card-item' key={index}>
                                     <p><FontAwesomeIcon icon={faPlus}/> {item}</p>
                                 </div>
                             )

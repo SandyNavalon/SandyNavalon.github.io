@@ -14,7 +14,7 @@ function App() {
   const {locale} = useContext(LanguageContext);
 
   /* DESTRUCTURING */
-  const { person, education, experience, languages, skills, aboutMe } = CV[locale || CV['en']];
+  const { person, education, experience, languages, skills, softwareSkills, aboutMe } = CV[locale || CV['en']];
 
   const [showEducation, setShowEducation] = useState(true);
 
@@ -43,6 +43,7 @@ function App() {
     <MoreInfo
       languages={languages}
       skills={skills}
+      softwareSkills={softwareSkills}
     />
     <ScrollButton className='App__elm5'/>
   </div>
